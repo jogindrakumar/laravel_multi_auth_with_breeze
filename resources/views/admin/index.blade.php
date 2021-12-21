@@ -234,7 +234,7 @@
                                 <li><a href=" "><span><i class="fas fa-cogs"></i></span>  Password Change</a></li>
                                 <li>
 
-                                    <a href=" "><span><i class="fas fa-unlock-alt"></i></span> Logout</a></li>
+                                    <a href="{{route('admin.logout')}} "><span><i class="fas fa-unlock-alt"></i></span> Logout</a></li>
                             </ul>
                         </div>
                     </li>
@@ -369,6 +369,11 @@
 
   
 <div class="content_wrapper">
+    @if(Session::has('success'))
+    <div class="alert alert-success" role="alert">
+{{Session::get('success')}}
+</div>
+@endif
     <!--middle content wrapper-->
     <div class="middle_content_wrapper">
         <!-- counter_area -->
