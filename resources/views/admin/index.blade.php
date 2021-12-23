@@ -369,13 +369,14 @@
 
   
 <div class="content_wrapper">
-    @if(Session::has('success'))
+  
+    <!--middle content wrapper-->
+    <div class="middle_content_wrapper">
+          @if(Session::has('success'))
     <div class="alert alert-success" role="alert">
 {{Session::get('success')}}
 </div>
 @endif
-    <!--middle content wrapper-->
-    <div class="middle_content_wrapper">
         <!-- counter_area -->
         <section class="counter_area">
             <div class="row">
