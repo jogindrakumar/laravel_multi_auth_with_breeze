@@ -9,7 +9,7 @@
       
         <link rel="icon" href="  {{asset('panel/assets/images/favicon.png')}}" >
         <!--Page title-->
-        <title>Admin Login</title>
+        <title>Seller Login easy </title>
         <!--bootstrap-->
         <link rel="stylesheet" href="  {{asset('panel/assets/css/bootstrap.min.css')}}">
         <!--font awesome-->
@@ -38,7 +38,7 @@
                     <div class="login_page center_container">
                         <div class="center_content">
                             <div class="logo">
-                                <h1 class="text-center text-white">ADMIN LOGIN</h1>
+                                <h1 class="text-center text-white">SELLER LOGIN</h1>
                             </div>
 
                           @if(Session::has('error'))
@@ -53,7 +53,7 @@
 @endif
 
     
-                            <form action="{{route('admin.login')}} " class="d-block" method="post">
+                            <form action="{{route('seller.login')}} " class="d-block" method="post">
                                 @csrf
                                 
                                 <div class="form-group icon_parent">
@@ -75,13 +75,13 @@
                                     </label>
                                 </div>
                                 <div class="form-group">
-                                    <a class="registration" href="{{route('admin.register')}} ">Create new account</a><br>
+                                    <a class="registration" href="{{route('seller.register')}} ">Create new account</a><br>
                                     <a href=" " class="text-white">I forgot my password</a>
                                     <button type="submit" class="btn btn-blue">Login</button>
                                 </div>
                             </form>
                             <div class="footer">
-                               <p>Copyright &copy; 2020 <a href="">yourwebwork</a>. All rights reserved.</p>
+                               <p>Copyright &copy; 2021 <a href="">yourwebwork</a>. All rights reserved.</p>
                             </div>
                             
                         </div>

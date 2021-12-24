@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <link rel="icon" href="{{asset('panel/assets/images/favicon.png')}}" >
         <!--Page title-->
-        <title>Admin </title>
+        <title>Seller</title>
         <!--bootstrap-->
         <link rel="stylesheet" href="{{asset('panel/assets/css/bootstrap.min.css')}}">
         <!--font awesome-->
@@ -35,9 +35,9 @@
                 <div class="registration_page center_container">
                     <div class="center_content">
                         <div class="logo">
-                           <h1 class="text-center text-white">ADMIN REGISTER</h1>
+                            <h1 class="text-center text-white">SELLER REGISTER</h1>
                         </div>
-<form action="{{route('admin.register.create')}} " method="post">
+<form action="{{route('seller.register.create')}} " method="post">
     @csrf
     
     <div class="form-group icon_parent">

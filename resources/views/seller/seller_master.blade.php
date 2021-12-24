@@ -9,7 +9,7 @@
         <!--Page title-->
 
         
-        <title>Admin </title>
+        <title>Seller </title>
         <!--bootstrap-->
         <link rel="stylesheet" href="{{asset('panel/assets/css/bootstrap.min.css')}}">
         <!--font awesome-->
